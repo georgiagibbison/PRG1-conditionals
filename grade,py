@@ -1,10 +1,26 @@
-def grade_assignment(score):
-    if score >= 90:
-        return "Excellent work!"
-    elif score >= 70:
-        return "Good job!"
-    elif score >= 50:
-        return "You passed!"
+def check_temperature(temp):
+    """Simple if/else - good for beginners to read and understand"""
+
+    if temp>50:
+        return "It's boiling today"
+    elif temp>40:
+        return "it's hot today"
+    elif temp>35:
+        return "it's warmer todat"
+    elif temp > 25:
+        return "It's warm today!"
+    elif temp > 20:
+        return "it's cool today"
+    elif temp>15:
+        return "it's cold today"
     else:
-        return "Please try again"
-print(grade_assignment(45))
+        return "It's freezing today!"
+while True:
+#data validation
+    try:
+        user_input=print("enter a temperature")    
+        number=int(user_input)
+        print(f"user input is valid:{number}")
+        break
+    except ValueError:
+        print("that isn't a valid number")
