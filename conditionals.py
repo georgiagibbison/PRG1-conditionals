@@ -1,18 +1,42 @@
 def check_temperature(temp):
     """Simple if/else - good for beginners to read and understand"""
-    if temp > 25:
-        return "It's warm today!"
-    else:
-        return "It's cool today!"
 
+    #accept =[1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "-", "+"]
+    #while temp in accept:
+    
+    try:
+        user_input=input("enter a temperature:")
+        number=int(user_input)
+        print(f"user input is valid:{number}")
+    except ValueError:
+        print("that isn't a valid number")
+    if temp>50:
+        return "It's boiling today"
+    elif temp>40:
+        return "it's hot today"
+    elif temp>35:
+        return "it's warmer todat"
+    elif temp > 25:
+        return "It's warm today!"
+    elif temp > 20:
+        return "it's cool today"
+    elif temp>15:
+        return "it's cold today"
+    else:
+        return "It's freezing today!"
+    #print("invailid input")
 
 def grade_assignment(score):
-    if score >= 90:
-        return "Excellent work!"
-    elif score >= 70:
-        return "Good job!"
-    elif score >= 50:
-        return "You passed!"
+    if score>=97:
+        return "Grade:A+"
+    elif score >= 90:
+        return "Grade:A"
+    elif score >= 85:
+        return "Grade:B"
+    elif score >= 80:
+        return "Grade:C"
+    elif score >= 75:
+        return "Grade:D"
     else:
         return "Please try again"
 
