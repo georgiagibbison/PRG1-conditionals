@@ -313,6 +313,6 @@ def run_match_examples():
 if __name__ == "__main__":
     # Comment back in the later examples to run 
     run_beginner_examples()
-    # run_intermediate_examples()
-    # run_advanced_examples()
-    # run_match_examples()
+    run_intermediate_examples()
+    run_advanced_examples()
+    run_match_examples()
